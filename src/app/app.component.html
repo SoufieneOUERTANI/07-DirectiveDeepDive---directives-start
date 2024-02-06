@@ -15,7 +15,7 @@
       </ng-template>
       <p appBasicHighlightDirective>Style me with basic directive</p>
       <!-- We can use 2 ways to bind a directive property -->
-      <p appBetterHighlight [defaultColor]="'yellow'" highlightColor='red' >Style me with a better directive</p>
+      <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'"  >Style me with a better directive</p>
     </div>
   </div>
 </div>
