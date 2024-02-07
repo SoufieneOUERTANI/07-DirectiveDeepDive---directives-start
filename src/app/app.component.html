@@ -16,6 +16,15 @@
       <!-- <p *ngIf="!onlyOdd">Only even</p> -->
       <p *appUnless="!onlyOdd">Only even</p>
       <p appBasicHighlightDirective>Style me with basic directive</p>
+      <div [ngSwitch]="num">
+        <p *ngSwitchCase="0">ZERO</p>
+        <p *ngSwitchCase="1">Un</p>
+        <p *ngSwitchCase="2">Deux</p>
+        <p *ngSwitchCase="3">Trois</p>
+        <p *ngSwitchCase="4">Quatre</p>
+        <p *ngSwitchCase="5">Cinq</p>
+        <p *ngSwitchDefault>Superieur à 5</p>
+      </div>
       <!-- We can use 2 ways to bind a directive property -->
       <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'"  >Style me with a better directive</p>
     </div>
