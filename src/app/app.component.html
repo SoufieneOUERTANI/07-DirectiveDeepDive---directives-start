@@ -13,7 +13,8 @@
       <ng-template [ngIf]="onlyOdd">
         <p>Only odd</p>
       </ng-template>
-      <p *ngIf="!onlyOdd">Only even</p>
+      <!-- <p *ngIf="!onlyOdd">Only even</p> -->
+      <p *appUnless="!onlyOdd">Only even</p>
       <p appBasicHighlightDirective>Style me with basic directive</p>
       <!-- We can use 2 ways to bind a directive property -->
       <p [appBetterHighlight]="'red'" [defaultColor]="'yellow'"  >Style me with a better directive</p>
